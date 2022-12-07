@@ -9,6 +9,14 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <div className='gradient-02 z-0' />
+    <motion.div
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      variants={staggerContainer}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: false, amount: 0.25 }}>
+      <TypingText title='| About Metaverses' textStyles='text-center' />
+      </motion.div>
   </section>
 );
 
