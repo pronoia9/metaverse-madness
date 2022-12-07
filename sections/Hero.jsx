@@ -6,14 +6,19 @@ import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings}, sm:pl-16 pl-6`}>
+  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
     <motion.div
       className={`${styles.innerWidth} mx-auto flex flex-col`}
       variants={staggerContainer}
       initial='hidden'
       whileInView='show'
-      viewport={{ once: false, amount: 0.25 }}
-    />
+      viewport={{ once: false, amount: 0.25 }}>
+      <div className='flex justify-center items-center flex-col relative z-10'>
+        <motion.h1 className={styles.heroHeading} variants={textVariant(1.1)}>
+          Metaverse
+        </motion.h1>
+      </div>
+    </motion.div>
   </section>
 );
 
