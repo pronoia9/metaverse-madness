@@ -23,6 +23,10 @@ const Hero = () => (
           <h1 className={styles.heroHeading}>Ness</h1>
         </motion.div>
       </div>
+
+      <motion.div className='relative w-full md:-mt-[20px] -mt-[12px]' variants={slideIn('right', 'tween', 0.2, 1)}>
+        <div className='absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]' />
+      </motion.div>
     </motion.div>
   </section>
 );
