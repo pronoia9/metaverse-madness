@@ -9,8 +9,19 @@ import { ExploreCard, TitleText, TypingText } from '../components';
 import { exploreWorlds } from '../constants';
 
 const Explore = () => (
-  <section>
-    Explore section
+  <section id='explore' className={`${styles.paddings}`}>
+    <motion.div
+      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      variants={staggerContainer}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: false, amount: 0.25 }}>
+      <TypingText title='| The World' textStyles='text-center' />
+      <TitleText
+        title={<>Choose the world you want <br className='md:block hidden' /> to explore</>}
+        textStyles='text-center'
+      />
+    </motion.div>
   </section>
 );
 
