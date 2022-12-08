@@ -13,6 +13,14 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     onClick={() => handleClick(id)}>
     <img className='absolute w-full h-full object-cover rounded-[24px]' src={imgUrl} alt='planet-04' />
+
+    {active !== id ? (
+      <h3 className='font-semibold sm:text-[26px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]'>
+        {title}
+      </h3>
+    ) : (
+      <></>
+    )}
   </motion.div>
 );
 
