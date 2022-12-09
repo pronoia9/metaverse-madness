@@ -7,10 +7,6 @@ import { startingFeatures } from '../constants';
 import { StartSteps, TitleText, TypingText } from '../components';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 
-const GetStarted = () => (
-  <section>
-    Get Started Section
-  </section>
-);
+const GetStarted = () => <section>Get Started Section</section>;
 
 export default GetStarted;
