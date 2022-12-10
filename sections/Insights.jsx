@@ -8,8 +8,15 @@ import { staggerContainer } from '../utils/motion';
 import { InsightCard, TitleText, TypingText } from '../components';
 
 const Insights = () => (
-  <section>
-    Insights section
+  <section className={`${styles.paddings} relative z-10`}>
+    <motion.div
+      variants={staggerContainer}
+      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: false, amount: 0.25 }}>
+      <TypingText title='| Insight' textStyles='text-center' />
+    </motion.div>
   </section>
 );
 
