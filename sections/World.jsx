@@ -19,6 +19,10 @@ const World = () => (
         title={<>Track friends around you and invite them to play together in the same world</>}
         textStyles='text-center'
       />
+
+      <motion.div className='relative mt-[68px] flex w-full h-[550px]' variants={fadeIn('up', 'tween', 0.3, 1)}>
+        <img className='w-full h-full object-cover' src='/map.png' alt='map' />
+      </motion.div>
     </motion.div>
   </section>
 );
