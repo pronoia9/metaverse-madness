@@ -24,6 +24,10 @@ const WhatsNew = () => (
           ))}
         </div>
       </motion.div>
+
+      <motion.div className={`flex-1 ${styles.flexCenter}`} variants={planetVariants('right')}>
+        <img className='w-[90%] h-[90%] object-contain' src='/whats-new.png' alt='get-started' />
+      </motion.div>
     </motion.div>
   </section>
 );
