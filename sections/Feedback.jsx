@@ -37,6 +37,10 @@ const Feedback = () => (
         src='/planet-09.png'
         alt='planet-09'
       />
+
+      <motion.div className='lg:block hidden absolute -left-[10%] top-[3%]' variants={zoomIn(0.4, 1)}>
+        <img className='w-[155px] h-[155px] object-contain' src='/stamp.png' alt='stamp' />
+      </motion.div>
     </motion.div>
   </motion.div>
 );
