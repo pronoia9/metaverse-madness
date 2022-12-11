@@ -30,6 +30,14 @@ const Feedback = () => (
         3.0. by using metaverse you can use it as anything”
       </p>
     </motion.div>
+
+    <motion.div className='relative flex-1 flex justify-center items-center' variants={fadeIn('left', 'tween', 0.2, 1)}>
+      <img
+        className='w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]'
+        src='/planet-09.png'
+        alt='planet-09'
+      />
+    </motion.div>
   </motion.div>
 );
 
