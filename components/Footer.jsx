@@ -24,6 +24,10 @@ const Footer = () => (
         </button>
       </div>
     </div>
+
+    <div className='flex flex-col'>
+      <div className='mb-[50px] h-[2px] bg-white opacity-10' />
+    </div>
   </motion.div>
 );
 
